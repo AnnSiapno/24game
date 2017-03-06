@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>24 Game</title>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div id="container">
+		<div id="containerHeader">
+			<div id="headerContents" class="hidden">
+				<h1 id="headerTitle">24 <span>GAME</span></h1>
+				<a href="#" id="helpButton">?</a>
+			</div>
+		</div>
+		<div id="containerBody">
+			<h1 id="homepageTitle">24 <span>GAME</span></h1>
+			<div id="instructions" class="hidden">
+				<div id="instructionsContainer">
+					<h2>How To Play</h2>
+					<p>You will be presented with four random numbers between 1 and 9 inclusive. Your mission is to create an equation that amounts to 24, using only the four numbers.</p>
+					<h3>Rules:</h3>
+					<div class="rules">
+						<p>&bull;&nbsp;&nbsp;&nbsp;You must use all the four numbers given and only those numbers</p>
+						<p>&bull;&nbsp;&nbsp;&nbsp;Only addition, subtraction, multiplication and division are allowed</p>
+						<p>&bull;&nbsp;&nbsp;&nbsp;Brackets may be used</p>
+						<p>&bull;&nbsp;&nbsp;&nbsp;Using multiple digits from the four numbers is not allowed (e.g. 1, 1, 2, 2, &rarr; 12 + 12)</p>
+						<p>&bull;&nbsp;&nbsp;&nbsp;Standard mathematical order of operations apply</p>
+					</div>
+				</div>
+				<h2 id="goodLuck">GOOD LUCK!</h2>
+			</div>
+			<div id="yourNumbers">
+				<div id="yourNumbersContainer"></div>
+			</div> <!-- div to display results of random numbers -->
+			<div id="yourAnswer"></div> <!-- div to display their answers -->
+			<div id="results"></div> <!-- div to display the results - "OH NO!" or "CONGRATULATIONS" -->
+			<input id="instructionsButton" type="submit" name="button" value="HOW TO PLAY"/>
+			<input id="play" type="submit" name="button" value="PLAY"/>
+			<div id="answer"></div> <!-- div to display textbox and GO button -->
+			<div id="errorMessage"></div> <!-- div to display error message -->
+		</div>
+		<div id="modalBox" class="modalHide"> <!-- Modal box div -->
+			<div>
+				<a href="#" title="Close" id="close">X</a>
+				<h2>How To Play</h2>
+				<p>You will be presented with four random numbers between 1 and 9 inclusive. Your mission is to create an equation that amounts to 24, using only the four numbers.</p>
+				<h3>Rules:</h3>
+				<div class="rules">
+					<p>&bull;&nbsp;&nbsp;&nbsp;You must use all the four numbers given and only those numbers</p>
+					<p>&bull;&nbsp;&nbsp;&nbsp;Only addition, subtraction, multiplication and division are allowed</p>
+					<p>&bull;&nbsp;&nbsp;&nbsp;Brackets may be used</p>
+					<p>&bull;&nbsp;&nbsp;&nbsp;Using multiple digits from the four numbers is not allowed (e.g. 1, 1, 2, 2, &rarr; 12 + 12)</p>
+					<p>&bull;&nbsp;&nbsp;&nbsp;Standard mathematical order of operations apply</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
